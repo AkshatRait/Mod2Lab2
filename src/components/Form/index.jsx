@@ -1,14 +1,24 @@
 import "./index.css"
+import { useState } from "react"
+
 
 const Form = () => {
-  return (<>
+    // const [newName, setNewName] = useState('');
+
+    // const handleChange = (e)=>{
+    //     e.preventDefault();
+    //     setNewName(e.target.value);
+    // }
+    return (<>
   <form>
     <label>Username
-        <input type = "text"></input>
+        <input {/*</label>*value = {newName} onChange = {(e)=> handleChange(e)} */}type = "text"></input>
+  {console.log(newName)}
     </label>
     <label>Email
         <input type = "text"></input>
         </label>
+
     <label>password
         <input type = "password"></input>
         </label>
